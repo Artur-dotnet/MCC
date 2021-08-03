@@ -79,14 +79,30 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\Views\SignUpView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\Views\UserProfileView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MVVM\ViewModels\AuthViewModel.cs" />
     <Compile Include="MVVM\ViewModels\BaseViewModel.cs" />
-    <Compile Include="MVVM\ViewModels\SignIn.cs" />
-    <Compile Include="MVVM\ViewModels\SignUp.cs" />
+    <Compile Include="MVVM\ViewModels\MainViewModel.cs" />
+    <Compile Include="MVVM\ViewModels\SignInViewModel.cs" />
+    <Compile Include="MVVM\ViewModels\SignUpViewModel.cs" />
+    <Compile Include="MVVM\ViewModels\UserProfileViewModel.cs" />
     <Compile Include="MVVM\Views\SignInView.xaml.cs">
       <DependentUpon>SignInView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\Views\SignUpView.xaml.cs">
+      <DependentUpon>SignUpView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\Views\UserProfileView.xaml.cs">
+      <DependentUpon>UserProfileView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

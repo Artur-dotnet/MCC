@@ -10,7 +10,8 @@
         AllowsTransparency="True"
         ResizeMode="NoResize"
         WindowStyle="None"
-        Background="Transparent">
+        Background="Transparent"
+        MouseDown="Window_MouseDown">
 
     <Window.DataContext>
         <vm:AuthViewModel/>
@@ -44,10 +45,12 @@
                 <StackPanel Orientation="Horizontal"
                             Margin="10,10">
                     <RadioButton IsChecked="True"
-                                 Content="Вход"/>
+                                 Content="Вход"
+                                 Command="{Binding SignInCommand}"/>
                     
                     <RadioButton IsChecked="False"
-                                 Content="Регистрация"/>
+                                 Content="Регистрация"
+                                 Command="{Binding SignUpCommand}"/>
                 </StackPanel>
             </StackPanel>
             
@@ -60,12 +63,7 @@
                 
                 <ContentPresenter Content="{Binding CurrentContent}"/>
             </Grid>
-            <!--<StackPanel Grid.Row="1"
-                        VerticalAlignment="Center"
-                        Margin="30,0">
-                <TextBox/>
-                <TextBox/>
-            </StackPanel>-->
+           
 
 
             <!-- Bottom -->

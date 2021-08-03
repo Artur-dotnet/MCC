@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows;
 using MCC.Commands;
 
 namespace MCC.MVVM.ViewModels
@@ -11,8 +11,8 @@ namespace MCC.MVVM.ViewModels
     class AuthViewModel : BaseViewModel
     {
 
-        private SignIn signInVM;
-        private SignUp signUpVM;
+        private SignInViewModel signInVM;
+        private SignUpViewModel signUpVM;
 
 
 
@@ -30,8 +30,8 @@ namespace MCC.MVVM.ViewModels
 
         public AuthViewModel()
         {
-            signInVM = new SignIn();
-            signUpVM = new SignUp();
+            signInVM = new SignInViewModel();
+            signUpVM = new SignUpViewModel();
             CurrentContent = signInVM;
         }
 
@@ -51,6 +51,7 @@ namespace MCC.MVVM.ViewModels
         {
             get => _signUpCommand ?? (_signUpCommand = new RelayCommand(obj =>
             {
+                MessageBox.Show("o");
                 CurrentContent = signUpVM;
             }));
         }

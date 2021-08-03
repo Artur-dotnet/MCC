@@ -10,26 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MCC
+namespace MCC.MVVM.Views
 {
     /// <summary>
-    /// Логика взаимодействия для AuthorizationWindow.xaml
+    /// Логика взаимодействия для SignUpView.xaml
     /// </summary>
-    public partial class AuthorizationWindow : Window
+    public partial class SignUpView : UserControl
     {
-        public AuthorizationWindow()
+        public SignUpView()
         {
             InitializeComponent();
-        }
-
-        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if(e.ButtonState == MouseButtonState.Pressed)
-            {
-                this.DragMove();
-            }
         }
     }
 }

@@ -4,13 +4,17 @@
              xmlns:local="clr-namespace:MCC"
              xmlns:view="clr-namespace:MCC.MVVM.Views"
              xmlns:vm="clr-namespace:MCC.MVVM.ViewModels"
-             StartupUri="MainWindow.xaml">
+             StartupUri="AuthorizationWindow.xaml">
     <Application.Resources>
 
 
-        <DataTemplate DataType="{x:Type vm:SignIn}">
+        <DataTemplate DataType="{x:Type vm:SignInViewModel}">
             <view:SignInView/>
         </DataTemplate>
-        
+
+        <DataTemplate DataType="{x:Type vm:SignUpViewModel}">
+            <view:SignUpView/>
+        </DataTemplate>
+
     </Application.Resources>
 </Application>
