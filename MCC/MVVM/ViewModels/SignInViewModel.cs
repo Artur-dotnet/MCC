@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MCC.MVVM.ViewModels
 {
-    class SignIn:BaseViewModel
+    class SignInViewModel:BaseViewModel
     {
     }
 }

@@ -6,9 +6,65 @@
         xmlns:local="clr-namespace:MCC"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        AllowsTransparency="True">
+        >
     
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+
+        <Border Background="#393E46"
+                Height="50"
+                Grid.ColumnSpan="3">
+            
+        </Border>
+        
+        
+        <!-- Menu -->
+        <StackPanel Grid.Row="1"
+                    Grid.RowSpan="2"
+                    Width="200"
+                    Background="#222831">
+
+            <RadioButton Content="Menu item -1 "
+                         Margin="5,15,0,0"
+                         Foreground="#EEEEEE"
+                         IsChecked="True"/>
+            
+            <RadioButton Content="Menu item -1 "
+                         Margin="5,15,0,0"
+                         Foreground="#EEEEEE"/>
+            
+            <RadioButton Content="Menu item -1 "
+                         Margin="5,15,0,0"
+                         Foreground="#EEEEEE"/>
+            
+            <RadioButton Content="Menu item -1 "
+                         Margin="5,15,0,0"
+                         Foreground="#EEEEEE"/>
+            
+            <RadioButton Content="Menu item -1 "
+                         Margin="5,15,0,0"
+                         Foreground="#EEEEEE"/>
+
+
+        </StackPanel>
+        
+        
+        <!-- Content -->
+        <ContentPresenter >
+            
+        </ContentPresenter>
+        
         
     </Grid>
 </Window>
