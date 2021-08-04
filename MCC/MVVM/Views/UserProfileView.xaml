@@ -23,12 +23,36 @@
         </Grid.RowDefinitions>
 
         <StackPanel>
-            <Grid >
+            <Grid Width="300" >
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
+                    <ColumnDefinition Width="auto"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
+                <Ellipse Fill="White"
+                     Width="150"
+                     Height="150"
+                     Grid.Column="0">
+                </Ellipse>
+
+                <Grid Grid.Column="1" Margin="15,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0"
+                               Text="Text"
+                               Foreground="White"
+                               FontSize="26"/>
+
+                    <TextBlock Grid.Row="1"
+                               Text="About"
+                               Foreground="White"
+                               FontSize="20"/>
+                </Grid>
             </Grid>
+
+            <Button Content="Edit"
+                    Margin="10"/>
         </StackPanel>
         
         
