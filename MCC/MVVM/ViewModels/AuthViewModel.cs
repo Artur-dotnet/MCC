@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using MCC.Commands;
+using MCC.Utilities;
+//using System.Security.Cryptography;
 
 namespace MCC.MVVM.ViewModels
 {
@@ -51,7 +53,6 @@ namespace MCC.MVVM.ViewModels
         {
             get => _signUpCommand ?? (_signUpCommand = new RelayCommand(obj =>
             {
-              
                 CurrentContent = signUpVM;
             }));
         }

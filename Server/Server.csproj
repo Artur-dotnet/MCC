@@ -52,7 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\DataManager.cs" />
+    <Compile Include="Data\DataManagerMCC.cs" />
+    <Compile Include="Migrations\202108051424008_first.cs" />
+    <Compile Include="Migrations\202108051424008_first.Designer.cs">
+      <DependentUpon>202108051424008_first.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,6 +74,11 @@
       <Project>{5F121921-AE98-4F6E-A9BE-B896AFC420D0}</Project>
       <Name>Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202108051424008_first.resx">
+      <DependentUpon>202108051424008_first.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -12,5 +12,7 @@ namespace Models.Entities
 
         public int GroupId { get; set; }
         public Group Group { get; set; }
+
+        public List<Message> Messages { get; set; }
     }
 }

@@ -16,5 +16,15 @@
             <view:SignUpView/>
         </DataTemplate>
 
+        
+        <DataTemplate DataType="{x:Type vm:ServerViewModel}">
+            <view:ServersView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:UserProfileViewModel}">
+            <view:UserProfileView/>
+        </DataTemplate>
+
+
     </Application.Resources>
 </Application>
