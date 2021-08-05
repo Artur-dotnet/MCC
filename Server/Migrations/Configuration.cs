@@ -5,14 +5,14 @@ namespace Server.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Server.Data.DataManager>
+    internal sealed class Configuration : DbMigrationsConfiguration<Server.Data.DataManagerMCC>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(Server.Data.DataManager context)
+        protected override void Seed(Server.Data.DataManagerMCC context)
         {
             //  This method will be called after migrating to the latest version.
 
