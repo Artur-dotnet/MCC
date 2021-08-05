@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Models.Entities
 {
-    class Server
+    public class Server:BaseModel
     {
+        public string Name { get; set; }
+
+        // создатель
+        public int UserId { get; set; }
+        public User User { get; set; }
+
+        public List<Group> Groups { get; set; }
     }
 }
