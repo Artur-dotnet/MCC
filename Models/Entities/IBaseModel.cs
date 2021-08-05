@@ -10,4 +10,9 @@ namespace Models.Entities
     {
         int Id { get; set; }
     }
+
+    public class BaseModel : IBaseModel
+    {
+        public int Id { get; set; }
+    }
 }

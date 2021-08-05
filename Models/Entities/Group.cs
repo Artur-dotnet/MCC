@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Models.Entities
 {
-    public class Chat:BaseModel
+    public class Group:BaseModel
     {
         public string Name { get; set; }
 
-        public int GroupId { get; set; }
-        public Group Group { get; set; }
+        public int ServerId { get; set; }
+        public Server Server { get; set; }
+
+        public List<Chat> Chats { get; set; }
     }
 }

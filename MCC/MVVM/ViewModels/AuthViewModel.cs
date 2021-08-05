@@ -51,7 +51,7 @@ namespace MCC.MVVM.ViewModels
         {
             get => _signUpCommand ?? (_signUpCommand = new RelayCommand(obj =>
             {
-                MessageBox.Show("o");
+              
                 CurrentContent = signUpVM;
             }));
         }
