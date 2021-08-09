@@ -44,7 +44,8 @@
                             Margin="0,0,15,0"
                             Background="Transparent"
                             BorderThickness="0"
-                            Foreground="#EEEEEE"/>
+                            Foreground="#EEEEEE"
+                            Click="Button_Click"/>
                     
                 </StackPanel>
                 
@@ -77,8 +78,8 @@
                   VerticalAlignment="Center"
                   Margin="50,0">
                 
-                
                 <ContentPresenter Content="{Binding CurrentContent}"/>
+                
             </Grid>
            
 
