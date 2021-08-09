@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models.Entities
 {
+    [Serializable]
     public class Server:BaseModel
     {
         public string Name { get; set; }

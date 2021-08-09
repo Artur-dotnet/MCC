@@ -36,7 +36,19 @@
 
 
             <!-- Top -->
-            <StackPanel Margin="0,40,0,0">
+            <StackPanel Margin="0,20,0,0">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right">
+                    
+                    <Button Content="X"
+                            Margin="0,0,15,0"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Foreground="#EEEEEE"/>
+                    
+                </StackPanel>
+                
+                
                 <TextBlock Text="Авторизация" 
                            TextAlignment="Center"
                            Foreground="#00ADB5"
@@ -46,11 +58,16 @@
                             Margin="10,10">
                     <RadioButton IsChecked="True"
                                  Content="Вход"
-                                 Command="{Binding SignInCommand}"/>
+                                 Command="{Binding SignInCommand}"
+                                 Style="{StaticResource RadioButtonStyle}"
+                                 Foreground="#EEEEEE"/>
                     
                     <RadioButton IsChecked="False"
                                  Content="Регистрация"
-                                 Command="{Binding SignUpCommand}"/>
+                                 Command="{Binding SignUpCommand}"
+                                 Style="{StaticResource RadioButtonStyle}"
+                                 Foreground="#EEEEEE"
+                                 Margin="10,0,0,0"/>
                 </StackPanel>
             </StackPanel>
             
