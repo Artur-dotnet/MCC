@@ -4,17 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.Entities
+namespace Models
 {
-   
-    public interface IBaseModel
+    [Serializable]
+    public enum RequestStatus
     {
-        int Id { get; set; }
+        Ok,
+        Error
     }
 
+
     [Serializable]
-    public class BaseModel : IBaseModel
+    public enum RequestType
     {
-        public int Id { get; set; }
+        LoggedIn,
+        Registration
+
     }
+
+
+
+
 }

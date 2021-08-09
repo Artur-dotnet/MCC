@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models.Entities
 {
+    [Serializable]
     public class Group:BaseModel
     {
         public string Name { get; set; }

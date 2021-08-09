@@ -41,27 +41,27 @@
                     Background="#222831">
 
             <RadioButton Content="Profile"
-                         Margin="5,15,0,0"
                          Foreground="#EEEEEE"
                          IsChecked="True"
-                         Command="{Binding UserProfileCommand}"/>
+                         Command="{Binding UserProfileCommand}"
+                         Style="{StaticResource SitebarMenuItemStyle}"/>
             
             <RadioButton Content="Servers"
-                         Margin="5,15,0,0"
                          Foreground="#EEEEEE"
-                         Command="{Binding ServerCommand}"/>
+                         Command="{Binding ServerCommand}"
+                         Style="{StaticResource SitebarMenuItemStyle}"/>
             
             <RadioButton Content="Menu item -1 "
-                         Margin="5,15,0,0"
-                         Foreground="#EEEEEE"/>
+                         Foreground="#EEEEEE"
+                         Style="{StaticResource SitebarMenuItemStyle}"/>
             
             <RadioButton Content="Menu item -1 "
-                         Margin="5,15,0,0"
-                         Foreground="#EEEEEE"/> 
+                         Foreground="#EEEEEE"
+                         Style="{StaticResource SitebarMenuItemStyle}"/> 
             
             <RadioButton Content="Menu item -1 "
-                         Margin="5,15,0,0"
-                         Foreground="#EEEEEE"/>
+                         Foreground="#EEEEEE"
+                         Style="{StaticResource SitebarMenuItemStyle}"/>
 
 
         </StackPanel>

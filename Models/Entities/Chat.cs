@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models.Entities
 {
+    [Serializable]
     public class Chat:BaseModel
     {
         public string Name { get; set; }
