@@ -8,6 +8,8 @@ using System.Windows;
 
 using MCC.Services;
 
+
+
 namespace MCC.MVVM.ViewModels
 {
     class SignInViewModel:BaseViewModel
@@ -25,12 +27,15 @@ namespace MCC.MVVM.ViewModels
         {
             get => _signInCommand ?? (_signInCommand = new RelayCommand(obj =>
             {
+
+
                 var currentUser = clientService.GetUser(Email, Password);
 
                 if(currentUser != null)
                 {
-                    MessageBox.Show(currentUser.FirstName + "  " + currentUser.LastName);
+                    //MessageBox.Show(currentUser.FirstName + "  " + currentUser.LastName);
 
+                    MainWindow mainWindow = new MainWindow();
                 }
                 else
                 {

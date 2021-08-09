@@ -81,6 +81,20 @@
 
             <Border Grid.Row="1"
                     Background="#522546">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <ListBox Width="250"
+                             Background="#082032"
+                             BorderThickness="0">
+                        
+                    </ListBox>
+                </Grid>
+                
                 
             </Border>
                 
