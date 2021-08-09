@@ -14,10 +14,10 @@
 
     <StackPanel>
 
-        
-        
-        
-            <TextBox Background="Transparent"
+
+
+
+        <TextBox Background="Transparent"
                      BorderThickness="0"
                      Foreground="#EEEEEE"
                      CaretBrush="White"
@@ -31,9 +31,9 @@
                  BorderThickness="0"
                  Foreground="#EEEEEE"
                  CaretBrush="White"
-                 Text="{Binding Email}"
+                 Text="{Binding Password}"
                  Style="{StaticResource TextBoxStyleMin}"
-                 Tag="Email"
+                 Tag="Password"
                  Margin="0,30,0,0"/>
 
 
