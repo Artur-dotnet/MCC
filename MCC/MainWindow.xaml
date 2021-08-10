@@ -4,9 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MCC"
+        xmlns:vm="clr-namespace:MCC.MVVM.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        >
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
     
     <Grid>
         <Grid.RowDefinitions>
@@ -35,33 +40,39 @@
                     Width="200"
                     Background="#222831">
 
-            <RadioButton Content="Menu item -1 "
-                         Margin="5,15,0,0"
+            <RadioButton Content="Profile"
                          Foreground="#EEEEEE"
-                         IsChecked="True"/>
+                         IsChecked="True"
+                         Command="{Binding UserProfileCommand}"
+                         Style="{StaticResource SitebarMenuItemStyle}"/>
+            
+            <RadioButton Content="Servers"
+                         Foreground="#EEEEEE"
+                         Command="{Binding ServerCommand}"
+                         Style="{StaticResource SitebarMenuItemStyle}"/>
             
             <RadioButton Content="Menu item -1 "
-                         Margin="5,15,0,0"
-                         Foreground="#EEEEEE"/>
+                         Foreground="#EEEEEE"
+                         Style="{StaticResource SitebarMenuItemStyle}"/>
             
             <RadioButton Content="Menu item -1 "
-                         Margin="5,15,0,0"
-                         Foreground="#EEEEEE"/>
+                         Foreground="#EEEEEE"
+                         Style="{StaticResource SitebarMenuItemStyle}"/> 
             
             <RadioButton Content="Menu item -1 "
-                         Margin="5,15,0,0"
-                         Foreground="#EEEEEE"/>
-            
-            <RadioButton Content="Menu item -1 "
-                         Margin="5,15,0,0"
-                         Foreground="#EEEEEE"/>
+                         Foreground="#EEEEEE"
+                         Style="{StaticResource SitebarMenuItemStyle}"/>
 
 
         </StackPanel>
         
         
         <!-- Content -->
-        <ContentPresenter >
+        <ContentPresenter Grid.Column="1"
+                          Grid.Row="1"
+                          Grid.ColumnSpan="2"
+                          Grid.RowSpan="2"
+                          Content="{Binding CurrentContent}">
             
         </ContentPresenter>
         

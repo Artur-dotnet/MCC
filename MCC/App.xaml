@@ -4,17 +4,38 @@
              xmlns:local="clr-namespace:MCC"
              xmlns:view="clr-namespace:MCC.MVVM.Views"
              xmlns:vm="clr-namespace:MCC.MVVM.ViewModels"
-             StartupUri="AuthorizationWindow.xaml">
+             StartupUri="MainWindow.xaml">
     <Application.Resources>
 
+        <ResourceDictionary>
 
-        <DataTemplate DataType="{x:Type vm:SignInViewModel}">
-            <view:SignInView/>
-        </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:SignInViewModel}">
+                <view:SignInView/>
+            </DataTemplate>
 
-        <DataTemplate DataType="{x:Type vm:SignUpViewModel}">
-            <view:SignUpView/>
-        </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:SignUpViewModel}">
+                <view:SignUpView/>
+            </DataTemplate>
+
+
+            <DataTemplate DataType="{x:Type vm:ServerViewModel}">
+                <view:ServersView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vm:UserProfileViewModel}">
+                <view:UserProfileView/>
+            </DataTemplate>
+
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/SitebarMenuItemStyle.xaml"/>
+                <ResourceDictionary Source="Themes/RadioButtonStyle.xaml"/>
+                <ResourceDictionary Source="Themes/TextBoxStyleMin.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            
+         
+        </ResourceDictionary>
+
 
     </Application.Resources>
 </Application>
