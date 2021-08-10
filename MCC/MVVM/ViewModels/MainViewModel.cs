@@ -5,10 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Models.Entities;
+
 namespace MCC.MVVM.ViewModels
 {
     class MainViewModel:BaseViewModel
     {
+        public User CurrentUser { get; set; }
+
+
 
         private UserProfileViewModel userProfileVM;
         private ServerViewModel serverVM;
